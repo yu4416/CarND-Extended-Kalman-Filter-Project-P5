@@ -39,10 +39,13 @@ Convert radar cartesian coordinates to polar coordinates (h function):
 ```
         
 ## Evaluation
-Jacobian matrix =          px / sqrt(px^2 + py^2)                px / sqrt(px^2 + py^2)   			 0     				    0
-                              -py / (px^2 + py^2)                    py / (px^2 + py^2)              0         				0
-                  py(vxpy - vypx) / (px^2 + py^2)^3/2   px(vxpy - vypx) / (px^2 + py^2)^3/2   px / sqrt(px^2 + py^2) py / sqrt(px^2 + py^2)
+```
+Jacobian matrix =     px / sqrt(px^2 + py^2)                px / sqrt(px^2 + py^2)   	               0     			0
+                     -py / (px^2 + py^2)                    py / (px^2 + py^2)                         0         		0
+                  py(vxpy - vypx) / (px^2 + py^2)^3/2    px(vxpy - vypx) / (px^2 + py^2)^3/2   px / sqrt(px^2 + py^2)    py / sqrt(px^2 + py^2)
+
 RMSE = sqrt( mean( (estimation - ground truth)^2 ) )
+```
 
 ## Accuracy
 Testing the EKF on dataset 1: RMSE = [0.0974, 0.0855, 0.4517, 0.4404], see image below:
