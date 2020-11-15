@@ -21,7 +21,8 @@ EKF has different F and Q matrix, and h function directly to map predicted locat
 
 EKF : dt = measurement timestamp - previous timestamp
 	  
-`F = 0 0 dt 0
+```
+F = 0 0 dt 0
     0 0 0 dt
     0 0 0 0
     0 0 0 0   
@@ -34,7 +35,8 @@ Q = dt^4/4 * noise_ax          0           dt^3/2 * noise_ax         0
 Convert radar cartesian coordinates to polar coordinates (h function):
         rho     = sqrt(px^2 + py^2)
         phi     = arctan(py / px)
-        rho_dot = (px * vx + py * vy) / rho`
+        rho_dot = (px * vx + py * vy) / rho
+```
         
 ## Evaluation
 Jacobian matrix =          px / sqrt(px^2 + py^2)                px / sqrt(px^2 + py^2)   			 0     				    0
