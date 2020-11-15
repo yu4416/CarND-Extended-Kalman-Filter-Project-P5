@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 [//]: # (Image References)
 
-[image1]: ./CarND-Extended-Kalman-Filter-Project-P5/dataset1_accuracy.JPG "Accuracy"
+[image1]: dataset1_accuracy.JPG "Accuracy"
 
 ## Equation Used
 Kalman Filter Prediction: x' = F * x + v
